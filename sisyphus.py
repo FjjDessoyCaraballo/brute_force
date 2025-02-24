@@ -12,7 +12,7 @@ def compile_app():
     print("Compiling application...")
     try:
         result = subprocess.run(
-            ["make", "re"], 
+            ["make"], 
             capture_output=True, 
             text=True,
             cwd=os.getcwd()
