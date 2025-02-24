@@ -1,20 +1,10 @@
-/* ****************************************************************************/
-/*  ROFL:ROFL:ROFL:ROFL 													  */
-/*          _^___      														  */
-/* L     __/   [] \    														  */
-/* LOL===__        \   			MY ROFLCOPTER GOES BRRRRRR					  */
-/* L      \________]  					by fdessoy-							  */
-/*         I   I     			(fdessoy-@student.hive.fi)					  */
-/*        --------/   														  */
-/* ****************************************************************************/
-
 #include <iostream>
 #include <random>
 
 int main()
 {
-	// the actual password will act as our backend stored password
 	std::string actualPassword;
+	// the actual password will act as our backend stored password
 	const int passwordSize = 4;
 	int password_generator[4];
 
@@ -28,9 +18,11 @@ int main()
 		actualPassword += std::to_string(password_generator[i]); 
 	}
 
+	// For sanity test
+	// actualPassword = "1234";
 
-	// // for test reasons only
-	// std::cout << "Password is: " << actualPassword << std::endl;
+	// for test reasons only
+	std::cout << "Password is: " << actualPassword << std::endl;
 
 	std::cout << "Welcome to Random Bank!" << std::endl;
 	std::cout << "Please identify yourself: ";
@@ -40,7 +32,6 @@ int main()
 	{
 		std::getline(std::cin, user);
 	}
-	std::cout << std::endl;
 	std::cout << "Hello " << user << " please provide your password: ";
 	std::string password;
 	password = "";
