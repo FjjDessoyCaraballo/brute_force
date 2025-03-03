@@ -5,5 +5,5 @@ Small educative project aimed towards showing what is "brute force" hacking and 
 ## Usage
 
 ```bash
-$> python3 brute_force
+$> python3 sisyphus.py
 ```
